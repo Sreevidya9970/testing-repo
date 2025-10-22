@@ -1,0 +1,13 @@
+name: Minimal Workflow
+on:
+ push:
+   branches:
+     - main
+jobs:
+ build:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Checkout Code
+       uses: actions/checkout@v4
+     - name: Run a Simple Command
+       run: echo "Hello, GitHub Actions!"
